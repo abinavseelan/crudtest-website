@@ -1,10 +1,10 @@
-# crudTest website
+# SendBack Website
 
-This repository houses the website for crudtest.com
+This repository houses the website for [SendBack.io](http://sendback.io)
 
 ## Contributing
 
-Want to raise an issue or pull request? Do give our [Contributing page](https://github.com/abinavseelan/crudtest-api/blob/master/CONTRIBUTING.md) a read. 🤓
+Want to raise an issue or pull request? Do give our [Contributing page](https://github.com/abinavseelan/sendback-website/blob/master/CONTRIBUTING.md) a read. 🤓
 
 ### Getting started
 

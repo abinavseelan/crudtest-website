@@ -1,7 +1,7 @@
 {
-  "name": "crudtest-website",
+  "name": "sendback-website",
   "version": "1.0.0",
-  "description": "Website for crudtest.com",
+  "description": "Website for sendback.io",
   "main": "-",
   "scripts": {
     "build": "./node_modules/.bin/gulp",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abinavseelan/crudtest-website.git"
+    "url": "git+https://github.com/abinavseelan/sendback-website.git"
   },
   "author": "\"Abinav Seelan <abinav.n.seelan@gmail.com>",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/abinavseelan/crudtest-website/issues"
+    "url": "https://github.com/abinavseelan/sendback-website/issues"
   },
-  "homepage": "https://github.com/abinavseelan/crudtest-website#readme",
+  "homepage": "https://github.com/abinavseelan/sendback-website#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
