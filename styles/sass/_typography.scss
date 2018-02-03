@@ -34,36 +34,72 @@ body, .article {
   font-size: 1rem;
   line-height: 1.5789474rem;
 }
-h1, .h1 {
+
+@mixin scale1() {
   font-size: 2.3684211rem;
   line-height: 3.1578947rem;
   margin-top: 1.5789474rem;
   margin-bottom: 3.1578948rem;
 }
-h2, .h2 {
+
+@mixin scale2() {
   font-size: 1.7894737rem;
   line-height: 3.1578947rem;
   margin-top: 1.5789474rem;
   margin-bottom: 1.5789474rem;
 }
-h3, .h3 {
+
+@mixin scale3() {
   font-size: 1.3157895rem;
   line-height: 1.5789474rem;
   margin-top: 1.5789474rem;
   margin-bottom: 1.5789474rem;
 }
+
+@mixin scale4() {
+  font-size: 1rem;
+  line-height: 1.5789474rem;
+  margin-top: 1.5789474rem;
+  margin-bottom: 0rem;
+}
+
+@mixin scale5() {
+  font-size: 1rem;
+  line-height: 1.5789474rem;
+  margin-top: 1.5789474rem;
+  margin-bottom: 0rem;
+}
+
+h1, .h1 {
+  @include scale1();
+  @media screen and (max-width: 768px) {
+    @include scale2();
+  }
+}
+
+h2, .h2 {
+  @include scale2();
+  @media screen and (max-width: 768px) {
+    @include scale3();
+  }
+}
+
+h3, .h3 {
+  @include scale3();
+  @media screen and (max-width: 768px) {
+    @include scale4();
+  }
+}
+
 h4, .h4 {
-  font-size: 1rem;
-  line-height: 1.5789474rem;
-  margin-top: 1.5789474rem;
-  margin-bottom: 0rem;
+  @include scale4();
 }
-h5, .h5 {
-  font-size: 1rem;
-  line-height: 1.5789474rem;
-  margin-top: 1.5789474rem;
-  margin-bottom: 0rem;
+
+h5, .h5, h6, .h6 {
+  @include scale5();
 }
+
+
 p, ul, ol, pre, table, blockquote {
   margin-top: 0rem;
   margin-bottom: 1.5789474rem;
