@@ -1,6 +1,6 @@
-# SendBack Website
+# sendback Website
 
-This repository houses the website for [SendBack.io](http://sendback.io)
+This repository houses the website for [sendback.io](http://sendback.io)
 
 ## Contributing
 
