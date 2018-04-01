@@ -89,7 +89,7 @@
           Success Response Codes (2xx)
         </h3>
         <h4>
-          Endpoint: http://api.sendback.io/status-code/2xx
+          Endpoint: http://sendback-api.now.sh/status-code/2xx
         </h4>
         <p>(replace 'xx' with your desired response code)</p>
         <div id='code-snippet-2xx' class="code-snippet"></div>
@@ -99,7 +99,7 @@
           Redirect Response Codes (3xx)
         </h3>
         <h4>
-          Endpoint: http://api.sendback.io/status-code/3xx
+          Endpoint: http://sendback-api.now.sh/status-code/3xx
         </h4>
         <p>(replace 'xx' with your desired response code)
           <div id='code-snippet-3xx' class="code-snippet"></div>
@@ -110,7 +110,7 @@
           Client error Response Codes (4xx)
         </h3>
         <h4>
-          Endpoint: http://api.sendback.io/status-code/4xx
+          Endpoint: http://sendback-api.now.sh/status-code/4xx
         </h4>
         <p>(replace 'xx' with your desired response code)
           <div id='code-snippet-4xx' class="code-snippet"></div>
@@ -121,7 +121,7 @@
           Server error Response Codes (5xx)
         </h3>
         <h4>
-          Endpoint: http://api.sendback.io/status-code/5xx
+          Endpoint: http://sendback-api.now.sh/status-code/5xx
         </h4>
         <p>(replace 'xx' with your desired response code)
           <div id='code-snippet-5xx' class="code-snippet"></div>
@@ -250,22 +250,22 @@
 
       notebook2xx = RunKit.createNotebook({
         element: document.getElementById('code-snippet-2xx'),
-        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://api.sendback.io/status-code/2xx\')\n\t.then((response) => {\n\t\tconsole.log(response.status)\n\t})\n\t.catch(() => {});',
+        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://sendback-api.now.sh/status-code/2xx\')\n\t.then((response) => {\n\t\tconsole.log(response.status)\n\t})\n\t.catch(() => {});',
       });
 
       notebook3xx = RunKit.createNotebook({
         element: document.getElementById('code-snippet-3xx'),
-        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://api.sendback.io/status-code/3xx\')\n\t.then(() => {\n\t\t// no-op since this response code will trigger the catch block\n\t})\n\t.catch((err) => {\n\t\tconsole.log(err.response.status);\n\t});',
+        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://sendback-api.now.sh/status-code/3xx\')\n\t.then(() => {\n\t\t// no-op since this response code will trigger the catch block\n\t})\n\t.catch((err) => {\n\t\tconsole.log(err.response.status);\n\t});',
       });
 
       notebook4xx = RunKit.createNotebook({
         element: document.getElementById('code-snippet-4xx'),
-        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://api.sendback.io/status-code/4xx\')\n\t.then(() => {\n\t\t// no-op since this response code will trigger the catch block\n\t})\n\t.catch((err) => {\n\t\tconsole.log(err.response.status);\n\t});',
+        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://sendback-api.now.sh/status-code/4xx\')\n\t.then(() => {\n\t\t// no-op since this response code will trigger the catch block\n\t})\n\t.catch((err) => {\n\t\tconsole.log(err.response.status);\n\t});',
       });
 
       notebook5xx = RunKit.createNotebook({
         element: document.getElementById('code-snippet-5xx'),
-        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://api.sendback.io/status-code/5xx\')\n\t.then(() => {\n\t\t// no-op since this response code will trigger the catch block\n\t})\n\t.catch((err) => {\n\t\tconsole.log(err.response.status);\n\t});',
+        source: 'const request = require(\'axios\');\n\n// Replace \'xx\' with any number you require\nrequest\n\t.get(\'http://sendback-api.now.sh/status-code/5xx\')\n\t.then(() => {\n\t\t// no-op since this response code will trigger the catch block\n\t})\n\t.catch((err) => {\n\t\tconsole.log(err.response.status);\n\t});',
       });
     });
   </script>
