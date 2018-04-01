@@ -72,3 +72,14 @@ a {
 ul {
   list-style: none;
 }
+
+.alert-message {
+  padding: 30px;
+  background-color: $night;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
